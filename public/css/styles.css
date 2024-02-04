@@ -1,0 +1,15 @@
+
+body {
+  background-color: #E8ECEF;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.temp_2-text {
+  text-align: center;
+  font-size: 2rem;
+  background-color: #250101;
+}

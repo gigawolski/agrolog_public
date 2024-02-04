@@ -1,0 +1,136 @@
+<%- include('partials/header') %>
+
+  <div class="jumbotron text-center">
+    <div class="container">
+      
+      <style>
+        .grid-container {
+          display: grid;
+          background-color: rgb(178, 181, 168);
+          grid-template-rows: auto auto;
+          grid-template-columns: auto auto auto auto;
+        }
+    
+        .grid-item {
+          font-size: 1.5rem;
+          border: 3px solid goldenrod;
+          color: white;
+        }
+      </style>
+    
+    
+    <body>
+      <h1><%= username %> <hr>Temperature monitoring</h1>
+      <br>
+      
+      
+      <div class="grid-container">
+
+        <div class="grid-item_1">
+        <h2 class="temp_1-text" style="color: brown;">Qvevri #1 <br> t=
+          <%= temp_1 %> C.
+        </h2><hr>
+        <form action="/Temp1" method="POST">
+          <div class="form-group">
+            <input type="text" class="form-control text-center" name="Temperature_1" placeholder="Assigned temp: <%= set_temp_1 %> °C.">
+          </div>
+          <button type="submit" class="btn-dark">Set Temperature</button>
+        </form>
+        <hr>
+        <form action="/Hyst1" method="POST">
+          <div class="form-group">
+            <input type="text" class="form-control text-center" name="Hysterisis_1" placeholder="Assigned hyst: <%= hysterisis_1 %> °C.">
+          </div>
+          <button type="submit" class="btn-dark">Set Hysterisis</button>
+        </form>
+        </div>
+
+        <div class="grid-item_2">
+          <h2 class="temp_2-text" style="color: brown;">Qvevri #2 <br> t=
+            <%= temp_2 %> C.
+          </h2><hr>
+          <form action="/Temp2" method="POST">
+            <div class="form-group">
+              <input type="text" class="form-control text-center" name="Temperature_2" placeholder="Assigned temp: <%= set_temp_2 %> °C.">
+            </div>
+            <button type="submit" class="btn-dark">Set Temperature</button>
+          </form>
+          <hr>
+          <form action="/Hyst2" method="POST">
+            <div class="form-group">
+              <input type="text" class="form-control text-center" name="Hysterisis_2" placeholder="Assigned hyst: <%= hyst_2 %> °C.">
+            </div>
+            <button type="submit" class="btn-dark">Set Hysterisis</button>
+          </form>
+          </div>
+
+          <div class="grid-item_3">
+            <h2 class="temp_3-text" style="color: brown;">Qvevri #3 <br> t=
+              <%= temp_3 %> C.
+            </h2><hr>
+            <form action="/Temp3" method="POST">
+              <div class="form-group">
+                <input type="text" class="form-control text-center" name="Temperature_3" placeholder="Assigned temp: <%= set_temp_3 %> °C.">
+              </div>
+              <button type="submit" class="btn-dark">Set Temperature</button>
+            </form>
+            <hr>
+            <form action="/Hyst3" method="POST">
+              <div class="form-group">
+                <input type="text" class="form-control text-center" name="Hysterisis_3" placeholder="Assigned hyst: <%= hyst_3 %> °C.">
+              </div>
+              <button type="submit" class="btn-dark">Set Hysterisis</button>
+            </form>
+            </div>
+
+            <div class="grid-item_4">
+              <h2 class="temp_4-text" style="color: brown;">Qvevri #4 <br> t=
+                <%= temp_4 %> C.
+              </h2><hr>
+              <form action="/Temp4" method="POST">
+                <div class="form-group">
+                  <input type="text" class="form-control text-center" name="Temperature_4" placeholder="Assigned temp: <%= set_temp_4 %> °C.">
+                </div>
+                <button type="submit" class="btn-dark">Set Temperature</button>
+              </form>
+              <hr>
+              <form action="/Hyst4" method="POST">
+                <div class="form-group">
+                  <input type="text" class="form-control text-center" name="Hysterisis_4" placeholder="Assigned hyst: <%= hyst_4 %> °C.">
+                </div>
+                <button type="submit" class="btn-dark">Set Hysterisis</button>
+              </form>
+              </div>
+
+        
+        
+        
+        
+        
+      </div>
+    </body>
+      
+
+
+
+
+
+
+
+
+      <hr>
+
+      <a class="btn btn-light btn-lg" href="/logout" role="button">Log Out</a>
+      
+    </div>
+  </div>
+
+  <%- include('partials/footer') %>
+
+
+
+
+
+
+
+   
